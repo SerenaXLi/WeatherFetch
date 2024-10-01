@@ -3,11 +3,18 @@ import dotenv from "dotenv";
 import NodeGeocoder from "node-geocoder";
 import axios from "axios";
 dotenv.config();
+/**
+ * options from node_geocoder with a provider and an API key
+ * @type {{apiKey: string, provider: string}}
+ */
 const options = {
     provider: 'locationiq',
     apiKey: process.env.LOCATION_TO_IP_API
 };
-
+/**
+ * instance of node_geocoder with options configured
+ * @type {node_geocoder.Geocoder}
+ */
 const geoCoder = NodeGeocoder(options);
 
 
@@ -18,6 +25,7 @@ const geoCoder = NodeGeocoder(options);
  * @returns {Promise<express.Response>}
  */
 export const getWeather = async (req, res) => {
+
     const {city,country} = req.body;
 
 

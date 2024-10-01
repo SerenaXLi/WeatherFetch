@@ -26,6 +26,7 @@
     "node-geocoder": "^4.4.0"
   },
   "devDependencies": {
+    "@types/node-geocoder": "^4.2.6",
     "nodemon": "^3.1.7"
   }
 }
