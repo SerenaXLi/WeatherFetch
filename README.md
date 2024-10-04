@@ -91,3 +91,6 @@ _If you do not have curl installed, install curl and try again_
 Live API on: https://weatherfetch.onrender.com/api/weather/getweather
 
 _As it is hosted on a free plan, the instance spins down with inactivity, therefore if you make a resquest, it may take up to 50 seconds to respond, if it times out, try again in a minute_
+
+
+- JSDocs with types was used.
